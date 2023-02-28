@@ -1,0 +1,109 @@
+.header {
+  background: #FDFDFB;
+  &__container {
+    min-height: 85px;
+    padding: 35px 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    @include fonts('Playfair Display',normal,400,14px,#555248);
+    line-height: 20px;
+    letter-spacing: 0.14em;
+
+    display: flex;
+    align-items: center;
+  }
+  &__logo-img {
+    height: 26px;
+    margin-right: 5px;
+  }
+  &__menu {
+    padding: 0 30px;
+    @include fonts('Roboto',normal, 400, 14px,#555248);
+  }
+  &__link {
+    &:not(:last-child){
+      margin-right: 65px;
+    }
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+    margin:0 -25px 0 20px;
+  }
+  &__actions-icon {
+    color:#1B1A17;
+    font-size: 16px;
+    &._alert{@include _alert;}
+    margin-right: 25px;
+  }
+}
+.header-search {
+    margin: 15px 0 0 auto;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    
+    top: 100%;
+  &._visible-search{
+    display: block;
+    position: static;
+    opacity: 1;
+    visibility:visible;
+    transition: opacity 0.5s ease-out;
+    
+  }
+  &__item {
+    width: 290px;
+    background-color: #FDFDFB;
+    height: 30px;
+  }
+  &__input {
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+
+    @include fonts('Roboto',normal, 400, 14px,#555248);
+    
+    background-color: #FFFFFF;
+    border: 1px solid #555248;
+    border-radius: 20px;
+  }
+}
+
+.burger{
+  $h:16px;
+  $hl:2px;
+
+  display: none;
+  width: 25px;
+  height: $h;
+  position: relative;
+  &__line{
+    display: block;
+    width: 100%;
+    height: $hl;
+    background: #555248;
+    position: absolute;
+    left: 0;
+    top: ($h - $hl) * 0.5;
+  }
+  &::before, &::after{
+    content: "";
+    width: 100%;
+    height: $hl;
+    background: #555248;
+    position: absolute;
+    left: 0;
+  }
+  &::before{top:0;}
+  &::after{bottom: 0;}
+}

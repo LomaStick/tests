@@ -1,0 +1,118 @@
+.s3 {
+  display: flex;
+  flex-direction: column;
+  &_bground {
+    position: relative;
+    z-index: 0;
+    &::before{
+      content: "";
+      width: 30%;
+      height: 100%;
+      background: #F7F5EF;
+      position: absolute;
+      top:0;
+      left: 0;
+      z-index: -100;
+    }
+    &::after{
+      content: "";
+      width: 70%;
+      height: 100%;
+      background: #FDFDFB;
+      position: absolute;
+      top:0;
+      right: 0;
+      z-index: -100;
+    }
+    &__eclipse{
+      content: "";
+      width: 12%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      right: 0;
+  
+      position: absolute;
+      z-index: -99;
+      
+      &::before{
+        content: "";
+        min-width: 365px;
+        min-height: 365px;
+        margin-top: -145px;
+  
+        border: 1px solid rgba(212, 176, 152, 1);
+        border-radius: 50%;
+  
+      }
+      &::after{
+        content: '';
+        min-width: 744px;
+        min-height: 744px;
+        margin-top: -215px;
+  
+        border: 1px solid rgba(212, 176, 152, 1);
+        border-radius: 50%;
+      }
+    }
+  }
+  &__container {
+    margin-top: 80px;
+  }
+  &__box {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img {
+    width: 520px;
+    margin-right: 70px;
+  }
+  &__info-box {
+    max-width: 375px;
+  }
+  &__title {
+    @include fonts('Playfair Display', normal, 400, 32px, #1B1A17);
+    line-height: 150%px;
+    margin-bottom: 38px;
+  }
+  &__text {
+    @include fonts('Roboto', normal, 400, 16px, #444240);
+    line-height: 150%px;
+    margin-bottom: 45px;
+  }
+  &__btn {
+    @include btn(205px, 64px, #D4B098);
+    @include fonts('Roboto',normal, 500, 12px, #FFFFFF);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  &__scroll {
+    display: block;
+    padding: 20px 0;
+    margin: 0 auto;
+    @include fonts('Prata', normal, 400, 12px, rgba(27, 26, 23, 0.82));
+    line-height: 16px;
+    &_controller {
+      &::before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        transform: rotate(-45deg);
+        border-top: 0.5px solid #1B1A17;
+        border-left: 0.5px solid #1B1A17;
+        display: inline-block;
+      }
+      &::after{
+        content: "";
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        border-top: 0.5px solid #1B1A17;
+        border-right: 0.5px solid #1B1A17;
+        display: inline-block;
+      }
+    }
+  }
+}

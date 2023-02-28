@@ -1,0 +1,76 @@
+.s1 {
+  background: #FDFDFB;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__box-info {
+    width: 45%;
+    position: relative;
+    z-index: 1;
+  }
+  &__title {
+    margin-left: -65px; 
+    white-space: nowrap;
+
+    @include fonts('Playfair Display',normal, 400, 45px,#1B1A17);
+    line-height: 150%;
+    &_line-dec{@include line-dec (50px, -15px)}
+  }
+  &__subtitle {
+    @include fonts('Playfair Display',normal, 400, 30px,#1B1A17);
+    line-height: 150%;
+  }
+  &__desc {
+    margin-top: 39px;
+    @include fonts('Roboto',normal, 300, 14px, rgba(27, 26, 23, 0.82));
+    line-height: 21px;
+  }
+  &__btn {
+    margin-top: 64px;
+    @include btn(205px, 64px, #444240);
+    @include fonts('Roboto',normal, 500, 12px, #FFFFFF);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  &__box-img {
+    display: flex;
+    position: relative;
+    z-index: 0;
+    &_bground {
+      &::before{
+        content: "";
+        width: 75%;
+        height: 100%;
+        left: -125px;
+  
+        background: linear-gradient(180deg, rgba(234, 227, 212, 0) 0%, #EAE3D4 100%);
+        mix-blend-mode: normal;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        border-radius: 0 50% 50% 0;
+        
+        position: absolute;
+        z-index: -100;
+      }
+    }
+  }
+  &__price {
+    align-self: start;
+    padding-top: 25%;
+    white-space: nowrap;
+    @include fonts('Prata',normal, 400, 16px, #1B1A17);
+    &_line-dec {
+      @include line-dec (50px, 15px)
+    }
+  }
+  &__img {
+    min-height: 300px;
+  }
+  &__diameter-text {
+    align-self: end;
+    padding-bottom: 25%;
+    @include fonts('Prata',normal, 400, 16px, #1B1A17);
+    &_line-dec {@include line-dec (50px, -15px)}
+  }
+}

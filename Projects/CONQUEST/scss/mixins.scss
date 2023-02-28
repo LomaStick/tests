@@ -1,0 +1,61 @@
+// FONTS
+@mixin fonts($ff:'Roboto', $fs: normal,$fw: 400, $fz: 14px, $clr:#000){
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fz;
+  font-style: $fs;
+  color: $clr
+}
+@mixin _alert {
+  position: relative;
+  span{
+    width: 13px;
+    height: 13px;
+    background: #E6C8B4;
+    border-radius: 50%;
+
+    @include fonts('Roboto', normal, 400, 8px, #1B1A17 );
+    line-height: 9px;
+
+    position: absolute;
+    top: -5px;
+    right: -5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+}
+
+
+
+@mixin  line-dec($width:50px, $position: -15px, $content:""){
+  display: flex;
+  align-items: center;
+  @if ($position <= 0){
+    &::before{
+      content: $content;
+      min-width: $width;
+      height: 0px;
+      margin-right: -$position;
+      border: 1px solid #8B8371;
+      display: inline-block;
+    }
+  }
+  @else{
+    &::after{
+      content: $content;
+      min-width: $width;
+      height: 0px;
+      margin-left: $position;
+      border: 1px solid #8B8371;
+      display: inline-block;
+    }
+  }
+}
+
+@mixin btn ($width: 205px,  $height: 64px, $bg-color: #444240){
+  width: $width;
+  height: $height;
+  background-color: $bg-color;
+}

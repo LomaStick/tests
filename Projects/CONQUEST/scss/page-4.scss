@@ -1,0 +1,53 @@
+.s4 {
+  background-color: #FFFFFF;
+  margin-top: 80px;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__social-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 140px 20px 60px 0
+  }
+  &__title {
+    @include fonts('Playfair Display', normal, 400, 32px, #1B1A17);
+  }
+  &__label {
+    flex: 0 1 140px;
+    max-width: 80%;
+    margin-top: 40px;
+    @include fonts('Roboto', normal, 400, 16px, #444240);
+  }
+  &__social-name {
+    font-weight: 700;
+  }
+  &__icons-box {
+    display: flex;
+    align-items: center;
+    margin: 0 -10px;
+  }
+  &__icon-link {
+    font-size: 20px;
+    height: 20px;
+    font-size: 20px;
+    margin:0 10px;
+  }
+}
+.s4-photo {
+  height: 465px;
+  display: flex;
+  align-items: center;
+  margin: -5px -5px;
+  &__column {
+    margin: 0 5px;
+  }
+  &__row {
+    margin: 5px 0;
+  }
+  &__img {
+    height: 100%;
+  }
+}

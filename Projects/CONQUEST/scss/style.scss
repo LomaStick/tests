@@ -1,0 +1,27 @@
+// fonts : 'Roboto'
+//font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+// font-family: 'Playfair Display', serif;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+// font-family: 'Prata', serif;
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+
+// _files
+@import 'reset.scss';
+@import 'icons.scss';
+@import 'mixins.scss';
+
+//Blocks
+@import 'header.scss';
+@import 'page-1.scss';
+@import 'page-2.scss';
+@import 'page-3.scss';
+@import 'page-4.scss';
+@import 'footer.scss';
+
+
+// Media
+@import 'media.scss'

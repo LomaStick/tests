@@ -1,0 +1,1 @@
+let PlanetName, CurentVisitor_userName;

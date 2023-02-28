@@ -1,0 +1,17 @@
+@mixin fonts($ff:'Roboto', $fs: normal,$fw: 400, $fz: 14px, $clr:#000){
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fz;
+  font-style: $fs;
+  color: $clr;
+}
+
+%btn{
+  width: 170px;
+  height: 40px;
+  @include fonts ('Roboto', normal, 400, 16px, #000);
+  line-height: 16px;
+  background: #FFFFFF;
+  border: 2px solid $clrGreen;
+  border-radius: 40px;
+}

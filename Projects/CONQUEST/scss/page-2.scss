@@ -1,0 +1,81 @@
+.s2 {
+  background-color: #FFFFFF;
+  &__container {margin-top: 80px;}
+  &__header {}
+  &__title {
+    text-align: center;
+    @include fonts('Playfair Display',normal,400,32px,#1B1A17);
+    line-height: 43px;
+  }
+  &__btn {
+    display: block;
+    margin: 0 0 0 auto;
+    width: 105px;
+    height: 40px;
+    @include fonts('Roboto',normal,500,16px,#1B1A17);
+  
+    &::after{
+      content: "";
+      padding-top: 11.5px;
+      width: 0%;
+      border-bottom: 2px solid #C4C0B6;
+      
+      display: flex;
+      flex-direction: column;
+    }
+    &_active::after{
+      width: 100%;
+      transition: width 0.5s ease-out;
+    }
+  }
+}
+.s2-grid {
+  height: 0;
+  margin-top: 25px;
+  display: grid;
+
+  gap: 25px;
+  grid-template-columns: repeat(3, 370px) ;
+  grid-template-rows: 470px;
+  grid-auto-rows:auto;
+  position: relative;
+  left:-100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease-in;
+  
+  &_visible{
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  &__card {
+    background-color: #FDFDFB;
+    padding: 40px;
+  }
+  &__title {
+    @include fonts('Playfair Display', normal, 700, 14px,rgba(27, 26, 23, 0.82));
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
+  &__price {
+    @include fonts('Prata',normal, 400, 12px, rgba(27, 26, 23, 0.82));
+  }
+  &__img {
+    height: 313px;
+    margin: 0 auto;  
+    filter: drop-shadow(2px 2px 10px rgba(85, 82, 72, 0.25));
+    border:1px solid rgba(226, 208, 196, 0.7);
+    border-radius: 50%;
+  }
+  &__btn {
+    margin-top: 20px;
+    &_line-dec {
+      @include line-dec(30px, -15px);
+    }
+  }
+  &__btn-text {
+    @include fonts('Playfair Display', normal, 400, 16px,#1B1A17);
+  }
+}

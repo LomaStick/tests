@@ -1,0 +1,138 @@
+@import "reset.scss";
+
+.comments {
+  &__container {
+    width: 660px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  &__title {
+    font-size: 28px;
+    line-height: 150%;
+    font-weight: 700px;
+    text-align: center;
+  }
+  &__form-wrapper {
+    padding: 20px;
+    margin: 10px 0 0 0;
+    border: 1px solid #555555;
+  }
+  &__form-title{
+    font-size: 20px;
+
+  }
+  &__form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+  }
+  &__items-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.comments-form {
+  &__userName-input {
+    height: 30px;
+    border: 1px solid #555555;
+    border-radius: 30px;
+    padding: 5px 14px;
+
+    &:focus{
+      border: 2px solid #000;
+    }
+  }
+  &__textarea {
+    display: inline-block;
+    height: 42px;
+    width: 100%;
+    max-height: 250px;
+    margin: 10px 0 0 0;
+    padding: 5px 14px;
+    font-size: 14px;
+    border: 1px solid #555555;
+    border-radius: 20px;
+    resize: none;
+    transition: height 0.2s ease;
+    &:focus{
+      overflow-x: auto;
+      border-width: 2px;
+      border-color: #000000; 
+    }
+    &::-webkit-scrollbar{
+      width: 0px;
+    }
+  }
+  &__date {
+    width: 100px;
+    margin: 10px 0 0 0;
+    padding: 2px 5px;
+
+    border: 1px solid #555555;
+    border-radius: 30px;
+  }
+  &__btn {
+    width: 120px;
+    height: 30px;
+    margin: 10px 0 0 0;
+    color: #000000;
+    border: 1px solid #555555;
+    border-radius: 20px;
+    background-color: #8f88ff;
+  }
+  &__error{
+    margin: 5px 0 0 14px;
+    font-size: 12px;
+    color: red;
+  }
+  &__loader{
+    margin: 5px 0 0 0;
+    font-weight: 700;
+    font-size: 14px;
+  }
+}
+
+
+.comments-item {
+  padding: 10px 20px;
+  border-bottom: 1px solid #3b3b3b;
+  &__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__userName {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &__cross {
+    font-size: 16px;
+    color: #555555;
+  }
+  &__text {
+    padding: 0 20px 0 0;
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: normal;
+  }
+  &__footer {
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__time {
+    font-size: 14px;
+    color: #555555;
+  }
+  &__like {
+    color: #555555;
+    font-size: 16px;
+    transition: color 0.2s ease-in;
+    &_active{
+      color: red;
+      
+    }
+  }
+}
+

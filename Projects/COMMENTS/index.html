@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comments</title>
+  <link rel="stylesheet" href="comments.css">
+
+
+</head>
+<body>
+  
+  <div class="comments">
+    <div class="comments__container">
+      <div class="comments__title">Комментарии</div>
+      <section class="comments__form-wrapper">
+        <div class="comments__form-title">Написать комментарий</div>
+        <form class="comments__form comments-form" name="commentsForm" action="index.html" method="POST" tabindex="-1">
+          <label>
+            <input type="text" class="comments-form__userName-input" name="formUserImput" placeholder="Ваше имя" tabindex="1">
+          </label>
+          <label>
+            <textarea class="comments-form__textarea" name="formTextarea" tabindex="2" placeholder="Написать комментарий..."></textarea>
+          </label>
+          <label>Дата:
+            <input type="date" class="comments-form__date" name="formDate" tabindex="3">
+          </label>
+          <button type="submit" class="comments-form__btn" name="formBtn" tabindex="4">Отправить</button>
+        </form>
+      </section>
+
+      <section class="comments__items-wrapper">
+        <!-- <div class="comments__items comments-item" id="comment-test">
+          <div class="comments-item__header">
+            <h6 class="comments-item__userName">Lorem ipsum</h6>
+            <button type="button" class="comments-item__cross _icon-cross"></button>
+          </div>
+          <p class="comments-item__text">Lorem ipsum dolor sit amet.</p>
+          <div class="comments-item__footer">
+            <p class="comments-item__time">05.05.19</p>
+            <button type="button" class="comments-item__like _icon-like"></button>
+          </div>
+        </div> -->
+      </section>
+    </div>
+  </div>
+
+  <script src="comments.js"></script>
+</body>
+</html>

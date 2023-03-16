@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Git Search</title>
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 	<header class="title">
@@ -13,11 +14,15 @@
 	<main class="search">
 		<div class="container">
 			<div class="search__wrapper">
-				<form action="#" class="search__form" method="get">
-					<input type="text" class="search__input">
+				<form  class="search__form" name="searchForm" action="index.html" method="POST" tabindex="-1" >
+					<label class = "search__input-wrapper">
+						<input type="text" class="search__input" name="searchInput" tabindex="1">
+					</label>
 				</form>
+				<div class="search-result__wrapper"></div>
 			</div>
 		</div>
 	</main>
+	<script src="./js/index.js"></script>
 </body>
 </html>

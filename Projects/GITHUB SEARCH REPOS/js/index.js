@@ -45,11 +45,11 @@ function drawResult(reposItems){
 		searchResult.insertAdjacentHTML(
 			"beforeend",
 			`<div class = "search__result search-result" id = "${id}">
-				<a href = '${result.user.loginLink}' class = "search-result__loginLink">
+				<a href = '${result.user.loginLink}' class = "search-result__loginLink" target="_blank">
 					<img class = "${result.user.loginAvatarSelector}" src="${result.user.loginAvatar}">
 					<p class = "${result.user.loginSelector}">${item.owner.login}</p>
 				</a>
-				<a href = '${result.rep.nameLink}' class = "${result.rep.nameSelector}">Репозиторий: ${result.rep.name}</a>
+				<a href = '${result.rep.nameLink}' class = "${result.rep.nameSelector}" target="_blank">Репозиторий: ${result.rep.name}</a>
 				<p class = "${result.rep.descSelector}">Описание:<br>${result.rep.desc}</p>
 				<div class = "search-result__footer">
 					<p class = "${result.rep.languageSelector}">Язык программирования: ${result.rep.language}</p>

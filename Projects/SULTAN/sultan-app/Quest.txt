@@ -1,0 +1,256 @@
+Задание. 
+Подготовить часть интернет-магазина с использованием React и TypeScript
++		1. Подготовить JSON набор данных, чтобы удобно было проверять работу (17+ товаров должно быть в стартовом наборе)
+			- Url картинки
+			- название
+				размер
+			- тип размера (вес/объем)
+			- штрихкод
+			- производитель
+			- Бренд
+			- описание
+			- цена
+			- тип ухода
+
+
+-		2. Подготовить страницу Каталога товаров (список товаров)
+-		2.0. Здесь и в других местах верстку обеспечиваем в том числе адаптивную
+-		2.1. Шапка и подвал также должны быть сверстаны (но функциональный там только блок с корзиной)
+-		2.2. Сортировку делаем (4 варианта - по цене и по названию, по убыванию и возрастанию)
++		2.3. Переключение способа карточек (рядом с сортировкой не делаем - можно даже не верстать)
+-		2.4. Фильтр уход за телом/ Уход за руками - делаем.
+-		2.4.1. Чтобы нормально тестировать, в карточке товара добавляем поле "тип ухода". Один товар может подходить к нескольким типам (например, одновременно уход за руками и уход за лицом)
+-		2.5. В фильтре слева Достаточно оставить только
+			- фильтр по цене
+			- по производителю (поиск, чекбоксы, показать все - поле поиск здесь фильтрует самих производителей)
+			- Уход за телом (здесь пункты продублировать те же, что и в перечне над каталогом товаров (Уход за телом, уход за руками, уход за ногами...)) - нажали сверху, выбралось и слева и наоборот.
+			- остальное из левого столбца не надо
+-		2.6.theButtonsOfThePageTransition
+-		2.7. Нажав на название можно перейти на карточку товара
+-		3. Страница карточки товара. 
+			- хлебные крошки пишем упрощенные (Главная - Каталог - Название товара)
+			- картинка
+			- блок справа (данные подставляются из JSON/ Local Stroage). Если данных не (Например, "в наличии"), то делаем просто статической версткой
+			-- поделиться и прайс-лист не активны
+			-- в корзину и +/- активно .
+			- Похожие товары НЕ ДЕЛАЕМ
+		Недавно просмотренные НЕ ДЕЛАЕМ
+-		4. Корзина. 
+-		4.1. Блок в шапке обновляется при действиях пользователя
+-		4.2. На странице корзины кнопки активны. +/-, удалить из корзины
+-		5. В корзине после кнопки "оформить заказ" сразу отображаем "Спасибо за заказ" и очищаем корзину.
+-		6. Предусмотреть микроадминку по управлению списком товаров.
+		- редактировать, добавлять, удалять товары. Сохранять это в localStorage. Если список пуст (админ все удалил или с самого старта), то наполнение из json(см п 1)
+		- отдельная возможность работать со списком типов ухода. При добавлении/редактировании тип ухода из выпадающего списка. Типов ухода должна быть возможность задать несколько. Какой именно способ ля этого выбрать - на выше усмотрение.
+-		7. Загрузить на githubPages
+-		8. Каждый товар должен открываться по своему url (можно использовать штрихкод в адресации, например)
+		ДОПОЛНИТЕЛЬНО.
+		Выделение выбранного в фильтрах, изменения после нажатия на кнопку "в корзину" и прочие эффекты, если в макете не прорисовано делайте просто на свое усмотрение.
+
+
+<div className='Catalog'>
+			<div className='container'>
+				<header className='Catalog__header Catalog-header'>
+					<h2 className='Catalog-header__title'>Косметика и гигена</h2>
+					<div className='Catalog-header__sort-option'>
+						<label>Сортировка</label>
+						<div>название</div>
+					</div>
+				</header>
+				<section className='Catalog-header__typelist'>
+					<div className='Catalog-header__typeitem'>Уход <br/> за телом</div>
+					<div className='Catalog-header__typeitem'>Уход <br/> за руками</div>
+					<div className='Catalog-header__typeitem'>Уход <br/> за телом</div>
+					<div className='Catalog-header__typeitem'>Уход <br/> за руками</div>
+					<div className='Catalog-header__typeitem'>Уход <br/> за телом</div>
+					<div className='Catalog-header__typeitem'>Уход <br/> за руками</div>
+				</section>
+				<main className='Catalog__main'>
+					<aside className='Catalog__aside Catalog-aside'>
+						<span className='Catalog-aside__title'>Подбор по параметрам</span>
+						<div className='Catalog-aside__price'>Фильтр по цене</div>
+						<div className='Catalog-aside__item'>Фильтр по производителю</div>
+						<div className='Catalog-aside__item'>Фильтр по бренду</div>
+						<div className='Catalog-aside__item'>Уход за телом</div>
+						<div className='Catalog-aside__item'>Уход за руками</div>
+					</aside>
+					<div className='Catalog__content Catalog-content'>
+						<section className='Catalog-content__grid'>
+							<div className='Catalog-content__card Catalog-content-card'>
+								Карточка
+								<img src="#" alt="product" className='Catalog-content-card__img'/>
+								<div className='Catalog-content-card__typesize'>420 г</div>
+								<a href="#" className='Catalog-content-card__title'> <b>AOS</b> средство для мытья посуды Crystal</a>
+								<div className='Catalog-content-card__list'>
+									<div className='Catalog-content-card__item'>Штрихкод</div>
+									<div className='Catalog-content-card__item'>Произовдитель</div>
+									<div className='Catalog-content-card__item'>Бренд</div>
+								</div>
+								<div className='Catalog-content-card__footer'>
+									<p className='Catalog-content-card__price'>48,76 ₸</p>
+									<button type='button' className='Catalog-content-card__btn'>В корзину</button>
+								</div>
+							</div>
+							<div className='Catalog-content__card Catalog-content-card'>
+								Карточка
+								<img src="#" alt="product" className='Catalog-content-card__img'/>
+								<div className='Catalog-content-card__typesize'>420 г</div>
+								<a href="#" className='Catalog-content-card__title'> <b>AOS</b> средство для мытья посуды Crystal</a>
+								<div className='Catalog-content-card__list'>
+									<div className='Catalog-content-card__item'>Штрихкод</div>
+									<div className='Catalog-content-card__item'>Произовдитель</div>
+									<div className='Catalog-content-card__item'>Бренд</div>
+								</div>
+								<div className='Catalog-content-card__footer'>
+									<p className='Catalog-content-card__price'>48,76 ₸</p>
+									<button type='button' className='Catalog-content-card__btn'>В корзину</button>
+								</div>
+							</div>
+							<div className='Catalog-content__card Catalog-content-card'>
+								Карточка
+								<img src="#" alt="product" className='Catalog-content-card__img'/>
+								<div className='Catalog-content-card__typesize'>420 г</div>
+								<a href="#" className='Catalog-content-card__title'> <b>AOS</b> средство для мытья посуды Crystal</a>
+								<div className='Catalog-content-card__list'>
+									<div className='Catalog-content-card__item'>Штрихкод</div>
+									<div className='Catalog-content-card__item'>Произовдитель</div>
+									<div className='Catalog-content-card__item'>Бренд</div>
+								</div>
+								<div className='Catalog-content-card__footer'>
+									<p className='Catalog-content-card__price'>48,76 ₸</p>
+									<button type='button' className='Catalog-content-card__btn'>В корзину</button>
+								</div>
+							</div>
+							<div className='Catalog-content__card Catalog-content-card'>
+								Карточка
+								<img src="#" alt="product" className='Catalog-content-card__img'/>
+								<div className='Catalog-content-card__typesize'>420 г</div>
+								<a href="#" className='Catalog-content-card__title'> <b>AOS</b> средство для мытья посуды Crystal</a>
+								<div className='Catalog-content-card__list'>
+									<div className='Catalog-content-card__item'>Штрихкод</div>
+									<div className='Catalog-content-card__item'>Произовдитель</div>
+									<div className='Catalog-content-card__item'>Бренд</div>
+								</div>
+								<div className='Catalog-content-card__footer'>
+									<p className='Catalog-content-card__price'>48,76 ₸</p>
+									<button type='button' className='Catalog-content-card__btn'>В корзину</button>
+								</div>
+							</div>
+							<div className='Catalog-content__card Catalog-content-card'>
+								Карточка
+								<img src="#" alt="product" className='Catalog-content-card__img'/>
+								<div className='Catalog-content-card__typesize'>420 г</div>
+								<a href="#" className='Catalog-content-card__title'> <b>AOS</b> средство для мытья посуды Crystal</a>
+								<div className='Catalog-content-card__list'>
+									<div className='Catalog-content-card__item'>Штрихкод</div>
+									<div className='Catalog-content-card__item'>Произовдитель</div>
+									<div className='Catalog-content-card__item'>Бренд</div>
+								</div>
+								<div className='Catalog-content-card__footer'>
+									<p className='Catalog-content-card__price'>48,76 ₸</p>
+									<button type='button' className='Catalog-content-card__btn'>В корзину</button>
+								</div>
+							</div>
+							<div className='Catalog-content__card Catalog-content-card'>
+								Карточка
+								<img src="#" alt="product" className='Catalog-content-card__img'/>
+								<div className='Catalog-content-card__typesize'>420 г</div>
+								<a href="#" className='Catalog-content-card__title'> <b>AOS</b> средство для мытья посуды Crystal</a>
+								<div className='Catalog-content-card__list'>
+									<div className='Catalog-content-card__item'>Штрихкод</div>
+									<div className='Catalog-content-card__item'>Произовдитель</div>
+									<div className='Catalog-content-card__item'>Бренд</div>
+								</div>
+								<div className='Catalog-content-card__footer'>
+									<p className='Catalog-content-card__price'>48,76 ₸</p>
+									<button type='button' className='Catalog-content-card__btn'>В корзину</button>
+								</div>
+							</div>
+							<div className='Catalog-content__card Catalog-content-card'>
+								Карточка
+								<img src="#" alt="product" className='Catalog-content-card__img'/>
+								<div className='Catalog-content-card__typesize'>420 г</div>
+								<a href="#" className='Catalog-content-card__title'> <b>AOS</b> средство для мытья посуды Crystal</a>
+								<div className='Catalog-content-card__list'>
+									<div className='Catalog-content-card__item'>Штрихкод</div>
+									<div className='Catalog-content-card__item'>Произовдитель</div>
+									<div className='Catalog-content-card__item'>Бренд</div>
+								</div>
+								<div className='Catalog-content-card__footer'>
+									<p className='Catalog-content-card__price'>48,76 ₸</p>
+									<button type='button' className='Catalog-content-card__btn'>В корзину</button>
+								</div>
+							</div>
+							<div className='Catalog-content__card Catalog-content-card'>
+								Карточка
+								<img src="#" alt="product" className='Catalog-content-card__img'/>
+								<div className='Catalog-content-card__typesize'>420 г</div>
+								<a href="#" className='Catalog-content-card__title'> <b>AOS</b> средство для мытья посуды Crystal</a>
+								<div className='Catalog-content-card__list'>
+									<div className='Catalog-content-card__item'>Штрихкод</div>
+									<div className='Catalog-content-card__item'>Произовдитель</div>
+									<div className='Catalog-content-card__item'>Бренд</div>
+								</div>
+								<div className='Catalog-content-card__footer'>
+									<p className='Catalog-content-card__price'>48,76 ₸</p>
+									<button type='button' className='Catalog-content-card__btn'>В корзину</button>
+								</div>
+							</div>
+							<div className='Catalog-content__card Catalog-content-card'>
+								Карточка
+								<img src="#" alt="product" className='Catalog-content-card__img'/>
+								<div className='Catalog-content-card__typesize'>420 г</div>
+								<a href="#" className='Catalog-content-card__title'> <b>AOS</b> средство для мытья посуды Crystal</a>
+								<div className='Catalog-content-card__list'>
+									<div className='Catalog-content-card__item'>Штрихкод</div>
+									<div className='Catalog-content-card__item'>Произовдитель</div>
+									<div className='Catalog-content-card__item'>Бренд</div>
+								</div>
+								<div className='Catalog-content-card__footer'>
+									<p className='Catalog-content-card__price'>48,76 ₸</p>
+									<button type='button' className='Catalog-content-card__btn'>В корзину</button>
+								</div>
+							</div>
+							<div className='Catalog-content__card Catalog-content-card'>
+								Карточка
+								<img src="#" alt="product" className='Catalog-content-card__img'/>
+								<div className='Catalog-content-card__typesize'>420 г</div>
+								<a href="#" className='Catalog-content-card__title'> <b>AOS</b> средство для мытья посуды Crystal</a>
+								<div className='Catalog-content-card__list'>
+									<div className='Catalog-content-card__item'>Штрихкод</div>
+									<div className='Catalog-content-card__item'>Произовдитель</div>
+									<div className='Catalog-content-card__item'>Бренд</div>
+								</div>
+								<div className='Catalog-content-card__footer'>
+									<p className='Catalog-content-card__price'>48,76 ₸</p>
+									<button type='button' className='Catalog-content-card__btn'>В корзину</button>
+								</div>
+							</div>
+							<div className='Catalog-content__card Catalog-content-card'>
+								Карточка
+								<img src="#" alt="product" className='Catalog-content-card__img'/>
+								<div className='Catalog-content-card__typesize'>420 г</div>
+								<a href="#" className='Catalog-content-card__title'> <b>AOS</b> средство для мытья посуды Crystal</a>
+								<div className='Catalog-content-card__list'>
+									<div className='Catalog-content-card__item'>Штрихкод</div>
+									<div className='Catalog-content-card__item'>Произовдитель</div>
+									<div className='Catalog-content-card__item'>Бренд</div>
+								</div>
+								<div className='Catalog-content-card__footer'>
+									<p className='Catalog-content-card__price'>48,76 ₸</p>
+									<button type='button' className='Catalog-content-card__btn'>В корзину</button>
+								</div>
+							</div>
+						</section>
+						<div className='Catalog-content__transition'>
+							<button type='button' className='Catalog-content__btnt Catalog-content__btnt_active'>1</button>
+							<button type='button' className='Catalog-content__btnt'>2</button>
+							<button type='button' className='Catalog-content__btnt'>3</button>
+							<button type='button' className='Catalog-content__btnt'>4</button>
+						</div>
+						<p className='Catalog-content__text'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada. </p>
+					</div>
+				</main>
+			</div>
+			<div className='card'></div>
+		</div>

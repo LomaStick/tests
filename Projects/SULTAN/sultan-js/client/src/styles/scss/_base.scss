@@ -1,0 +1,22 @@
+/* BASE */
+.App{
+  min-height: 100vh;
+	font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 400;
+  color: #111111;
+  background-color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.main{
+
+	flex: 1 1 auto;
+}
+.container {
+	width: 1370px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+/* BASE END */

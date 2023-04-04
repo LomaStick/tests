@@ -1,0 +1,310 @@
+[
+	{
+		"title": "Салфетки влажные Velvet освежающие, 15 штук в упаковке, арт 350-010",
+		"imgurl": "./data/img/Nivea_gel1.png",
+		"sizevalue": "350",
+		"sizetype": "г",
+		"barcode": 3000000001,
+		"manufacturer": "GRIFON", 
+		"brand": "GRIFON", 
+		"description": "Влажные освежающие салфетки Velvet Fresh изготовлены из высококачественного нетканого материала spunlace: мягкого, плотного, приятного на ощупь. Универсальные салфетки с освежающим ароматом зеленого чая предназначены для очищения кожи рук. Они содержат специальные смягчающие компоненты и не сушат кожу.", 
+		"price": "12.50",
+		"currency": "₸",
+		"typeCategory": "Гигиеническая продукция",
+		"count": 2,
+		"promo": 
+			{
+			"cashback": null,
+			"sale": null,
+			"new": null,
+			"best": null,
+			"popular": null
+			}
+	},
+	{
+		"title": "Крем-гель для душа увлажнение и забота",
+		"imgurl": "./data/img/Grifon_velvet_salfetki_15.png",
+		"sizevalue": "750",
+		"sizetype": "мл",
+		"barcode": 3100000001,
+		"manufacturer": "Beiersdorf AG", 
+		"brand": "NIVEA", 
+		"description": "Гель-уход для душа «Увлажнение и забота» от NIVEA, обогащенный маслом миндаля, мягко очищает кожу и ухаживает за ней, делая ее гладкой и шелковистой. Он прекрасно смягчает, защищает от потери влаги и создает ощущение гармонии и спокойствия. Входящие в его состав компоненты дарят коже интенсивный уход и максимальное увлажнение.", 
+		"price": "35.50",
+		"currency": "₸",
+		"typeCategory": "Уход за телом",
+		"count": 2,
+		"promo": 
+			{
+			"cashback": null,
+			"sale": null,
+			"new": null,
+			"best": null,
+			"popular": null
+			}
+	},
+	{
+		"title": "мужской гель для душа и шампунь ICE CHILL",
+		"imgurl": "./data/img/empty.png",
+		"sizevalue": "250",
+		"sizetype": "мл",
+		"barcode": 3100000002,
+		"manufacturer": "Unilever", 
+		"brand": "AXE", 
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis.", 
+		"price": "25.50",
+		"currency": "₸",
+		"typeCategory": "Уход за телом",
+		"count": 2,
+		"promo": 
+			{
+			"cashback": null,
+			"sale": null,
+			"new": null,
+			"best": null,
+			"popular": null
+			}
+	},
+	{
+		"title": "Спонж для снятия макияжа Puff23-SW",
+		"imgurl": "./data/img/Zinger_sponzh1.png",
+		"sizevalue": "12",
+		"sizetype": "г",
+		"barcode": 3200000001,
+		"manufacturer": "IM Singer & Co", 
+		"brand": "ZINGER", 
+		"description": "Каплевидный спонж для удаления макияжа Puff23-SW ZINGER гарантирует мягкую, но эффективную очистку кожи. После использования спонж для снятия макияжа ZINGER моется и высушивается. Демакияж со спонжем занимает меньше времени, чем обычное умывание.", 
+		"price": "18.50",
+		"currency": "₸",
+		"typeCategory": "Уход за лицом",
+		"count": 2,
+		"promo": 
+			{
+			"cashback": null,
+			"sale": null,
+			"new": null,
+			"best": null,
+			"popular": null
+			}
+	},
+	{
+		"title": "Шампунь для волос",
+		"imgurl": "./data/img/bezvodi_shampun1.png",
+		"sizevalue": "250",
+		"sizetype": "мл",
+		"barcode": 3300000001,
+		"manufacturer": "Гермес", 
+		"brand": "\"БЕЗ ВОДЫ\"", 
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis.", 
+		"price": "18.50",
+		"currency": "₸",
+		"typeCategory": "Уход за волосами",
+		"count": 2,
+		"promo": 
+			{
+			"cashback": null,
+			"sale": null,
+			"new": null,
+			"best": null,
+			"popular": null
+			}
+	},
+	{
+		"title": "Маска для окрашенных волос / BC pH 4.5 Freeze",
+		"imgurl": "./data/img/Maska_200.png",
+		"sizevalue": "200",
+		"sizetype": "мл",
+		"barcode": 3300000002,
+		"manufacturer": "Henkel", 
+		"brand": "SCHWARZKOPF PROFESSIONAL", 
+		"description": "Интенсивная ухаживающая маска содержит гидролизированный кератин, который заполняет структурные разрывы от кортекса до внешнего слоя волос, улучшая эластичность окрашенных волос.", 
+		"price": "21.30",
+		"currency": "₸",
+		"typeCategory": "Уход за волосами",
+		"count": 2,
+		"promo": 
+			{
+			"cashback": null,
+			"sale": null,
+			"new": null,
+			"best": null,
+			"popular": null
+			}
+	},
+	{
+		"title": "Ванночка для смягчения кожи стоп",
+		"imgurl": "./data/img/vannochka_glya_nog.970x0.png",
+		"sizevalue": "150",
+		"sizetype": "мл",
+		"barcode": 3400000001,
+		"manufacturer": "Орто Косметикс", 
+		"brand": "ELIVA", 
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis.", 
+		"price": "16.80",
+		"currency": "₸",
+		"typeCategory": "Уход за ногами",
+		"count": 2,
+		"promo": 
+			{
+			"cashback": null,
+			"sale": null,
+			"new": null,
+			"best": null,
+			"popular": null
+			}
+	},
+	{
+		"title": " BIO-SOAP Экологичное туалетное мыло. Литсея и бергамот",
+		"imgurl": "./data/img/BioMio_Soap_90.png",
+		"sizevalue": "90",
+		"sizetype": "г",
+		"barcode": 4100000001,
+		"manufacturer": "Сплат-Косметика", 
+		"brand": "BioMio", 
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis.", 
+		"price": "30.15",
+		"currency": "₸",
+		"typeCategory": "Уход за руками",
+		"count": 2,
+		"promo": 
+			{
+			"cashback": null,
+			"sale": null,
+			"new": null,
+			"best": null,
+			"popular": null
+			}
+	},
+	{
+		"title": "Средство для мытья посуды Cristal",
+		"imgurl": "./data/img/AOS_Crystal_450.png",
+		"sizevalue": "450",
+		"sizetype": "мл",
+		"barcode": 4200000001,
+		"manufacturer": "Нефис Косметик", 
+		"brand": "AOS", 
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.", 
+		"price": "48,76",
+		"currency": "₸",
+		"typeCategory": "Средства для мытья посуды",
+		"count": 3,
+		"promo": 
+			{
+			"cashback": null,
+			"sale": null,
+			"new": null,
+			"best": null,
+			"popular": null
+			}
+	},
+	{
+		"title": "Средство для мытья посуды Ultra Green",
+		"imgurl": "./data/img/AOS_Antiseptic_Ultra_green_450.png",
+		"sizevalue": "450",
+		"sizetype": "мл",
+		"barcode": 4200000002,
+		"manufacturer": "Нефис Косметик", 
+		"brand": "AOS", 
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis.", 
+		"price": "48,76",
+		"currency": "₸",
+		"typeCategory": "Средства для мытья посуды",
+		"count": 3,
+		"promo": 
+			{
+			"cashback": null,
+			"sale": null,
+			"new": null,
+			"best": null,
+			"popular": null
+			}
+	},
+	{
+		"title": "Автомат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
+		"imgurl": "./data/img/ARIEL_Liquid_Capsules_15x28.png",
+		"sizevalue": "15X28.8",
+		"sizetype": "г",
+		"barcode": 4300000001,
+		"manufacturer": "Procter & Gamble", 
+		"brand": "ARIEL", 
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo. ", 
+		"price": "55,80",
+		"currency": "₸",
+		"typeCategory": "Средства для стирки",
+		"count": 2,
+		"promo": 
+			{
+			"cashback": null,
+			"sale": null,
+			"new": null,
+			"best": null,
+			"popular": null
+			}
+	},
+	{
+		"title": "Порошок стиральный Автомат 100 пятен COMPACT",
+		"imgurl": "./data/img/BIMAX_Compact_1500.png",
+		"sizevalue": "1500",
+		"sizetype": "г",
+		"barcode": 4300000002,
+		"manufacturer": "Нефис Косметик", 
+		"brand": "BIMAX", 
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo. ", 
+		"price": "30.15",
+		"currency": "₸",
+		"typeCategory": "Средства для стирки",
+		"count": 2,
+		"promo": 
+			{
+			"cashback": null,
+			"sale": null,
+			"new": null,
+			"best": null,
+			"popular": null
+			}
+	},
+	{
+		"title": "Кондиционер-ополаскиватель для белья BIO-SOFT Лаванда, концентрат",
+		"imgurl": "./data/img/BioMio_Soap_90.png",
+		"sizevalue": "1000",
+		"sizetype": "мл",
+		"barcode": 4300000003,
+		"manufacturer": "Сплат-Косметика", 
+		"brand": "BioMio", 
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo. ", 
+		"price": "40.21",
+		"currency": "₸",
+		"typeCategory": "Средства для стирки",
+		"count": 2,
+		"promo": 
+			{
+			"cashback": null,
+			"sale": null,
+			"new": null,
+			"best": null,
+			"popular": null
+			}
+	},
+	{
+		"title": "Стиральный порошок 360 Свежесть от Vernel",
+		"imgurl": "./data/img/persil_poroshok.png",
+		"sizevalue": "3000",
+		"sizetype": "г",
+		"barcode": 4300000004,
+		"manufacturer": "Henkel", 
+		"brand": "Persil", 
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo. ", 
+		"price": "40.21",
+		"currency": "₸",
+		"typeCategory": "Средства для стирки",
+		"count": 2,
+		"promo": 
+			{
+			"cashback": null,
+			"sale": null,
+			"new": null,
+			"best": null,
+			"popular": null
+			}
+	}
+]

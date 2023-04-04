@@ -1,0 +1,12 @@
+.row{
+	display: flex;
+	flex-direction: row;
+}
+
+.container {
+	width: 100%;
+	max-width: 1360px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.page{}

@@ -1,0 +1,20 @@
+.crumb {
+	margin: 45px 0 50px 0;
+	line-height: 120%;
+	font-weight: 300;
+	color: #3F4E65;
+}
+.crumb:not(:last-child){
+	padding-right: 10px;
+	
+}
+.crumb:not(:first-child){
+	padding-left: 10px;
+	border-left: 1px dashed rgb(63, 78, 101, 0.3);
+}
+.crumb:last-child{
+	color :rgb(63, 78, 101, .5)
+}
+.breadcrumbs__container {
+	display: flex;
+}
